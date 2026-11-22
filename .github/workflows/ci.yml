@@ -1,0 +1,47 @@
+# Checks on every push and pull request: formatting, vet and the tests of
+# the screen, the package build (the .ipk and the installer), and the shell
+# scripts that run on the router.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  go:
+    name: Go
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: gofmt
+        run: test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }
+      - name: vet
+        run: go vet ./...
+      - name: tests
+        run: go test ./...
+      - name: package
+        run: |
+          sh package/build.sh
+          (cd dist && sha256sum -c SHA256SUMS)
+
+  shell:
+    name: Shell scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: shellcheck
+        # SC2034: the init scripts' variables are read by /etc/rc.common.
+        run: |
+          shellcheck -s sh -S warning -e SC2034 \
+            package/build.sh package/install.sh.in \
+            package/control/postinst package/control/prerm \
+            package/files/usr/sbin/mudi-screen-mode package/files/usr/libexec/mudi-screen/run \
+            package/files/etc/init.d/mudi-screen package/files/etc/init.d/mudi-screen-traffic \
+            docs/screenshots/make.sh

@@ -1,0 +1,11 @@
+
+config screen 'main'
+	# Language of the screen: en or ru. Empty: the language of the web admin.
+	option lang ''
+
+config traffic 'traffic'
+	# The traffic analyzer's collector (0: off).
+	option enabled '1'
+	# Monthly mobile data cap in GB (0: none) and the day its period starts.
+	option cap_gb '0'
+	option cycle_day '1'

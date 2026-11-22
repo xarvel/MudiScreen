@@ -1,0 +1,12 @@
+Package: mudi-screen
+Version: @VERSION@-1
+Depends: libc
+Source: MudiScreen
+License: PolyForm-Noncommercial-1.0.0
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: @SIZE@
+Description: A new user interface for the GL.iNet Mudi 7 touchscreen, with apps.
+ Replaces GL.iNet's gl_screen: lock screen with the passcode, network,
+ battery and power, and cards and pages of apps (manifest + any program that
+ prints JSON). Switch with mudi-screen-mode custom|stock.

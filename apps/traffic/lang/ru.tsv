@@ -1,0 +1,138 @@
+# Russian for the traffic analyzer. The collector translates whole texts and
+# templates ("{}" is filled in after the translation); the screen does not
+# read this file.
+Traffic	Трафик
+Traffic · {}	Трафик · {}
+{} of {} used	израсходовано {} из {}
+Mobile data: {} of {}	Мобильные данные: {} из {}
+This month	Этот месяц
+This period	Этот период
+Live	Сейчас
+1 hour	1 час
+24 hours	24 часа
+Download	Приём
+Upload	Отдача
+Peak	Пик
+Downloaded	Принято
+Uploaded	Отдано
+−3 min	−3 мин
+−1 h	−1 ч
+−24 h	−24 ч
+now	сейчас
+today	сегодня
+Internet	Интернет
+Interface	Интерфейс
+Mobile data	Мобильные данные
+{} of {}	{} из {}
+today {}	сегодня {}
+Details	Подробно
+Devices	Устройства
+{} online	в сети: {}
+Apps & services	Приложения и сервисы
+Hosts	Хосты
+Connections	Соединения
+Protocols	Протоколы
+{}/min	{}/мин
+Settings	Настройки
+The connection table cannot be read: {}	Не читается таблица соединений: {}
+Now	Сейчас
+Today	Сегодня
+Offline today	Были сегодня
+{} conn.	{} соед.
+↓ {} ↑ {}	↓ {} ↑ {}
+own traffic and VPN tunnels	свой трафик и VPN-туннели
+No traffic yet	Трафика пока нет
+Blue: download, green: upload.	Синий — приём, зелёный — отдача.
+Device	Устройство
+No traffic from this device yet	У этого устройства пока нет трафика
+Speed	Скорость
+The router's own connections: DNS, time, updates, and VPN tunnels that carry the devices' traffic.	Соединения самого роутера: DNS, время, обновления и VPN-туннели, по которым идёт трафик устройств.
+Connection	Подключение
+IP address	IP-адрес
+Connections now	Соединения сейчас
+Apps & services today	Приложения и сервисы за сегодня
+Categories	Категории
+{} · devices: {}	{} · устройств: {}
+Category	Категория
+Devices today	Устройства за сегодня
+Total	Всего
+Fastest first	Быстрые сверху
+No connections	Соединений нет
+Per minute	В минуту
+Blocked	Заблокировано
+Not found	Не найдено
+Answers per minute	Ответов в минуту
+Names today: {}	Имена за сегодня: {}
+Blocked today	Заблокировано сегодня
+Names come from the router's DNS answers and from TLS. Devices with encrypted DNS of their own (iCloud Private Relay, DNS over HTTPS) show fewer names.	Имена берутся из DNS-ответов роутера и из TLS. Устройства со своим шифрованным DNS (iCloud Private Relay, DNS over HTTPS) показывают меньше имён.
+This router has no mobile data counter.	У этого роутера нет счётчика мобильных данных.
+none	нет
+Cap	Лимит
+{} used	израсходовано {}
+{} left	осталось {}
+Per day	По дням
+Period	Период
+Dates	Даты
+Starts again in	Начнётся заново через
+{} d.	{} дн.
+Counted since	Считается с
+SIM {}, all time	SIM {}, за всё время
+Cap and period	Лимит и период
+Counted by the router's modem, the same counter as in GL.iNet's admin panel.	Считает модем роутера, это тот же счётчик, что в админке GL.iNet.
+Monthly mobile data cap	Месячный лимит мобильных данных
+No cap	Без лимита
+The period starts on day	Период начинается в день
+Saved	Сохранено
+Router	Роутер
+Wi-Fi 2.4 GHz	Wi-Fi 2,4 ГГц
+Wi-Fi 5 GHz	Wi-Fi 5 ГГц
+Wi-Fi 6 GHz	Wi-Fi 6 ГГц
+Cable	Кабель
+{} s	{} с
+{} min	{} мин
+{} h {} min	{} ч {} мин
+kbit/s	Кбит/с
+Mbit/s	Мбит/с
+Gbit/s	Гбит/с
+B	Б
+KB	КБ
+MB	МБ
+GB	ГБ
+TB	ТБ
+the analyzer is not running	анализатор не запущен
+The analyzer is not running: /etc/init.d/mudi-screen-traffic start	Анализатор не запущен: /etc/init.d/mudi-screen-traffic start
+# categories
+Video	Видео
+Music	Музыка
+Social	Соцсети
+Messaging	Мессенджеры
+Calls & meetings	Звонки и встречи
+Cloud storage	Облака
+Web & search	Сайты и поиск
+Shopping	Покупки
+Gaming	Игры
+AI	ИИ
+Work	Работа
+System & updates	Система и обновления
+Ads & tracking	Реклама и трекеры
+CDN & hosting	CDN и хостинг
+VPN & tunnels	VPN и туннели
+DNS	DNS
+Other	Прочее
+# services and protocols without a brand name
+Unidentified	Не определено
+Time sync	Синхронизация времени
+SIP calls	SIP-звонки
+Encrypted DNS	Шифрованный DNS
+Linux updates	Обновления Linux
+Ad networks	Рекламные сети
+Apple Push	Push Apple
+Google push	Push Google
+Apple push	Push Apple
+Other TCP	Прочий TCP
+Other UDP	Прочий UDP
+Remote desktop	Удалённый рабочий стол
+{} · {} conn.	{} · {} соед.
+{} since {}	{} с {}
+No traffic right now. Today shows the whole day.	Сейчас трафика нет. «Сегодня» покажет весь день.
+No traffic yet today.	Сегодня трафика ещё не было.

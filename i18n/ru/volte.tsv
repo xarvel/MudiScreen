@@ -1,0 +1,46 @@
+# Russian for the MudiVoLTE app (/usr/share/mudi-screen/apps/volte of the mudi-volte package)
+Calls are on	Звонки на связи
+Calls: connecting	Звонки: подключение
+Calls are down	Звонки не работают
+service stopped	служба остановлена
+missed: {}	пропущенных: {}
+Missed calls: {}	Пропущенных: {}
+Calls (VoLTE)	Звонки (VoLTE)
+Status	Статус
+online	на связи
+Online for	На связи
+Network	Сеть
+Phones	Телефоны
+none	нет
+Missed calls ({})	Пропущенные ({})
+Clear the list	Очистить список
+Clear the missed calls?	Очистить пропущенные звонки?
+Clear	Очистить
+No missed calls	Пропущенных нет
+Cleared	Список очищен
+Missed call	Пропущенный звонок
+starting	запуск
+waiting for the modem and LTE	ждёт модем и LTE
+opening the IMS connection	открывает IMS-соединение
+registering with the operator	регистрация у оператора
+recovering after a failure	восстановление после сбоя
+restarting the radio	перезапуск радио
+the radio is off (airplane mode)	радио выключено (авиарежим)
+under a minute	меньше минуты
+{} d {} h	{} д {} ч
+{} h {} min	{} ч {} мин
+{} min	{} мин
+hidden number	скрытый номер
+Incoming call	Входящий звонок
+Answer it on a phone	Ответьте на телефоне
+In a call · {}	Разговор · {}
+Calling…	Вызов…
+Call	Звонок
+Line	Линия
+Incoming from	Входящий от
+Answered on	Ответил
+Outgoing to	Исходящий на
+From the phone	С телефона
+Between the phones	Между телефонами
+Ringing	Звонит
+Talking	Разговор

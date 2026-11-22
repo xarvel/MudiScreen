@@ -1,0 +1,1664 @@
+{
+ "card": {
+  "title": "Traffic · 1.3 GB",
+  "subtitle": "↓ 6.0 ↑ 0.2 Mbit/s",
+  "icon": "chart",
+  "color": "purple",
+  "open": "main"
+ },
+ "pages": {
+  "dev:aa:bb:cc:00:00:01": {
+   "title": "phone",
+   "items": [
+    {
+     "type": "stats",
+     "stats": [
+      {
+       "label": "Download",
+       "value": "4.3",
+       "unit": "Mbit/s",
+       "color": "blue"
+      },
+      {
+       "label": "Upload",
+       "value": "89",
+       "unit": "kbit/s",
+       "color": "green"
+      },
+      {
+       "label": "Today",
+       "value": "99",
+       "unit": "MB"
+      }
+     ]
+    },
+    {
+     "type": "chart",
+     "label": "Speed",
+     "x_start": "−3 min",
+     "x_end": "now",
+     "unit": "Mbit/s",
+     "span": 90,
+     "series": [
+      {
+       "label": "↓",
+       "color": "blue",
+       "values": [
+        0,
+        6.672,
+        6.794,
+        6.847,
+        6.829,
+        6.742,
+        6.587,
+        6.369,
+        6.093,
+        5.768,
+        5.403,
+        5.007,
+        4.591,
+        4.168,
+        3.749,
+        3.345,
+        2.967,
+        2.627,
+        2.333,
+        2.094,
+        1.916,
+        1.805,
+        1.762,
+        1.791,
+        1.888,
+        2.053,
+        2.281,
+        2.564,
+        2.896,
+        3.266,
+        3.666,
+        4.083,
+        4.507,
+        4.924,
+        5.325,
+        5.698,
+        6.032,
+        6.318,
+        6.548,
+        6.716,
+        6.817,
+        6.849,
+        6.81,
+        6.702,
+        6.528,
+        6.291,
+        6,
+        5.662,
+        5.286,
+        4.883,
+        4.464,
+        4.041,
+        3.625,
+        3.228,
+        2.861,
+        2.533,
+        2.255,
+        2.034,
+        1.876,
+        1.785,
+        1.763,
+        1.813,
+        1.931,
+        2.115,
+        2.36,
+        2.659,
+        3.003,
+        3.384,
+        3.79,
+        4.21,
+        4.633,
+        5.047,
+        5.441,
+        5.803,
+        6.123,
+        6.393,
+        6.605,
+        6.754,
+        6.834,
+        6.845,
+        6.785,
+        6.656,
+        6.463,
+        6.209,
+        5.903,
+        5.553,
+        5.167,
+        4.758,
+        4.337,
+        3.915
+       ]
+      },
+      {
+       "label": "↑",
+       "color": "green",
+       "values": [
+        0,
+        0.161,
+        0.161,
+        0.159,
+        0.156,
+        0.152,
+        0.147,
+        0.14,
+        0.132,
+        0.124,
+        0.114,
+        0.105,
+        0.096,
+        0.087,
+        0.078,
+        0.07,
+        0.064,
+        0.058,
+        0.053,
+        0.05,
+        0.049,
+        0.049,
+        0.051,
+        0.054,
+        0.058,
+        0.064,
+        0.071,
+        0.079,
+        0.087,
+        0.097,
+        0.106,
+        0.115,
+        0.124,
+        0.133,
+        0.14,
+        0.147,
+        0.152,
+        0.157,
+        0.159,
+        0.161,
+        0.16,
+        0.159,
+        0.155,
+        0.151,
+        0.145,
+        0.138,
+        0.13,
+        0.121,
+        0.112,
+        0.102,
+        0.093,
+        0.084,
+        0.076,
+        0.068,
+        0.062,
+        0.056,
+        0.052,
+        0.05,
+        0.049,
+        0.049,
+        0.051,
+        0.055,
+        0.06,
+        0.066,
+        0.073,
+        0.081,
+        0.09,
+        0.099,
+        0.109,
+        0.118,
+        0.127,
+        0.135,
+        0.142,
+        0.149,
+        0.154,
+        0.158,
+        0.16,
+        0.161,
+        0.16,
+        0.158,
+        0.154,
+        0.149,
+        0.143,
+        0.135,
+        0.127,
+        0.118,
+        0.109,
+        0.1,
+        0.09,
+        0.082
+       ]
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "label": "Device"
+    },
+    {
+     "type": "info",
+     "label": "Connection",
+     "value": "Wi-Fi 5 GHz"
+    },
+    {
+     "type": "info",
+     "label": "IP address",
+     "value": "192.168.8.137"
+    },
+    {
+     "type": "info",
+     "label": "MAC",
+     "value": "AA:BB:CC:00:00:01"
+    },
+    {
+     "type": "info",
+     "label": "Connections now",
+     "value": "3"
+    },
+    {
+     "type": "info",
+     "label": "Today",
+     "value": "↓ 97 MB ↑ 2.3 MB"
+    },
+    {
+     "type": "section",
+     "label": "Apps \u0026 services today"
+    },
+    {
+     "type": "bar",
+     "label": "YouTube",
+     "value": "95 MB",
+     "sub": "Video",
+     "color": "#FF5A5F",
+     "open": "svc:YouTube",
+     "fraction": 1
+    },
+    {
+     "type": "bar",
+     "label": "Telegram",
+     "value": "3.7 MB",
+     "sub": "Messaging",
+     "color": "#34C759",
+     "open": "svc:Telegram",
+     "fraction": 0.039069680427243896
+    },
+    {
+     "type": "bar",
+     "label": "Apple Push",
+     "value": "49 KB",
+     "sub": "System \u0026 updates",
+     "color": "#8C98AD",
+     "open": "svc:Apple Push",
+     "fraction": 0.0005077422797260176
+    },
+    {
+     "type": "section",
+     "label": "Connections now"
+    },
+    {
+     "type": "entry",
+     "label": "rr1.googlevideo.com",
+     "value": "4.3 Mbit/s",
+     "sub": "YouTube · QUIC · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "149.154.167.51",
+     "value": "89 kbit/s",
+     "sub": "Telegram · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "17.57.144.20",
+     "value": "1.0 kbit/s",
+     "sub": "Apple Push · Apple push · 0 s"
+    }
+   ]
+  },
+  "devices": {
+   "title": "Devices",
+   "items": [
+    {
+     "type": "segments",
+     "options": [
+      {
+       "label": "Now",
+       "checked": true,
+       "action": {
+        "id": "basis",
+        "args": [
+         "now"
+        ]
+       }
+      },
+      {
+       "label": "Today",
+       "action": {
+        "id": "basis",
+        "args": [
+         "today"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "phone",
+     "value": "4.3 Mbit/s",
+     "sub": "↓ 4.3 ↑ 0.1 Mbit/s · 3 conn.",
+     "color": "blue",
+     "open": "dev:aa:bb:cc:00:00:01",
+     "fraction": 0.9795224001207805,
+     "fraction2": 0.020477599879219547,
+     "color2": "green"
+    },
+    {
+     "type": "bar",
+     "label": "laptop",
+     "value": "1.2 Mbit/s",
+     "sub": "↓ 1.2 ↑ 0.1 Mbit/s · 3 conn.",
+     "color": "blue",
+     "open": "dev:aa:bb:cc:00:00:02",
+     "fraction": 0.26603606031769206,
+     "fraction2": 0.01547743625312534,
+     "color2": "green"
+    },
+    {
+     "type": "bar",
+     "label": "tablet",
+     "value": "601 kbit/s",
+     "sub": "↓ 529 ↑ 72 kbit/s · 2 conn.",
+     "color": "blue",
+     "open": "dev:aa:bb:cc:00:00:03",
+     "fraction": 0.12180104921450143,
+     "fraction2": 0.016571461084837508,
+     "color2": "green"
+    },
+    {
+     "type": "bar",
+     "label": "Router",
+     "value": "38 kbit/s",
+     "sub": "own traffic and VPN tunnels",
+     "color": "blue",
+     "open": "dev:router",
+     "fraction": 0.007239656851412824,
+     "fraction2": 0.0014149181800037476,
+     "color2": "green"
+    },
+    {
+     "type": "text",
+     "label": "Blue: download, green: upload.",
+     "color": "dim"
+    }
+   ]
+  },
+  "dns": {
+   "title": "DNS",
+   "items": [
+    {
+     "type": "stats",
+     "stats": [
+      {
+       "label": "Per minute",
+       "value": "0"
+      },
+      {
+       "label": "Blocked",
+       "value": "15",
+       "color": "red"
+      },
+      {
+       "label": "Not found",
+       "value": "0",
+       "color": "orange"
+      }
+     ]
+    },
+    {
+     "type": "chart",
+     "label": "Answers per minute",
+     "style": "bars",
+     "x_start": "−1 h",
+     "x_end": "now",
+     "span": 60,
+     "series": [
+      {
+       "color": "blue",
+       "values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "label": "Names today: 156"
+    },
+    {
+     "type": "entry",
+     "label": "www.youtube.com",
+     "value": "30",
+     "sub": "YouTube"
+    },
+    {
+     "type": "entry",
+     "label": "rr1.googlevideo.com",
+     "value": "27",
+     "sub": "YouTube"
+    },
+    {
+     "type": "entry",
+     "label": "api.telegram.org",
+     "value": "24",
+     "sub": "Telegram"
+    },
+    {
+     "type": "entry",
+     "label": "www.netflix.com",
+     "value": "21",
+     "sub": "Netflix"
+    },
+    {
+     "type": "entry",
+     "label": "graph.instagram.com",
+     "value": "18",
+     "sub": "Instagram"
+    },
+    {
+     "type": "entry",
+     "label": "doubleclick.net",
+     "value": "15",
+     "sub": "Google Ads"
+    },
+    {
+     "type": "entry",
+     "label": "api.github.com",
+     "value": "12",
+     "sub": "GitHub"
+    },
+    {
+     "type": "entry",
+     "label": "chatgpt.com",
+     "value": "9",
+     "sub": "ChatGPT"
+    },
+    {
+     "type": "section",
+     "label": "Blocked today"
+    },
+    {
+     "type": "entry",
+     "label": "doubleclick.net",
+     "value": "15",
+     "color": "red"
+    },
+    {
+     "type": "section",
+     "label": "Devices today"
+    },
+    {
+     "type": "entry",
+     "label": "laptop",
+     "value": "156"
+    },
+    {
+     "type": "text",
+     "label": "Names come from the router's DNS answers and from TLS. Devices with encrypted DNS of their own (iCloud Private Relay, DNS over HTTPS) show fewer names.",
+     "color": "dim"
+    }
+   ]
+  },
+  "flows": {
+   "title": "Connections",
+   "items": [
+    {
+     "type": "stats",
+     "stats": [
+      {
+       "label": "Total",
+       "value": "10"
+      },
+      {
+       "label": "TCP",
+       "value": "8",
+       "color": "blue"
+      },
+      {
+       "label": "UDP",
+       "value": "2",
+       "color": "purple"
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "label": "Fastest first"
+    },
+    {
+     "type": "entry",
+     "label": "rr1.googlevideo.com",
+     "value": "4.3 Mbit/s",
+     "sub": "phone · QUIC · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "www.netflix.com",
+     "value": "986 kbit/s",
+     "sub": "laptop · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "edge-chat.instagram.com",
+     "value": "563 kbit/s",
+     "sub": "tablet · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "chatgpt.com",
+     "value": "127 kbit/s",
+     "sub": "laptop · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "api.github.com",
+     "value": "109 kbit/s",
+     "sub": "laptop · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "149.154.167.51",
+     "value": "89 kbit/s",
+     "sub": "phone · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "www.wikipedia.org",
+     "value": "37 kbit/s",
+     "sub": "tablet · HTTPS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "176.126.162.110",
+     "value": "35 kbit/s",
+     "sub": "Router · HTTPS (8443) · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "1.1.1.1",
+     "value": "3.0 kbit/s",
+     "sub": "Router · DNS · 0 s"
+    },
+    {
+     "type": "entry",
+     "label": "17.57.144.20",
+     "value": "1.0 kbit/s",
+     "sub": "phone · Apple push · 0 s"
+    }
+   ]
+  },
+  "hosts": {
+   "title": "Hosts",
+   "items": [
+    {
+     "type": "segments",
+     "options": [
+      {
+       "label": "Now",
+       "checked": true,
+       "action": {
+        "id": "basis",
+        "args": [
+         "now"
+        ]
+       }
+      },
+      {
+       "label": "Today",
+       "action": {
+        "id": "basis",
+        "args": [
+         "today"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "type": "entry",
+     "label": "rr1.googlevideo.com",
+     "value": "4.3 Mbit/s",
+     "sub": "YouTube · phone"
+    },
+    {
+     "type": "entry",
+     "label": "www.netflix.com",
+     "value": "986 kbit/s",
+     "sub": "Netflix · laptop"
+    },
+    {
+     "type": "entry",
+     "label": "edge-chat.instagram.com",
+     "value": "563 kbit/s",
+     "sub": "Instagram · tablet"
+    },
+    {
+     "type": "entry",
+     "label": "chatgpt.com",
+     "value": "127 kbit/s",
+     "sub": "ChatGPT · laptop"
+    },
+    {
+     "type": "entry",
+     "label": "api.github.com",
+     "value": "109 kbit/s",
+     "sub": "GitHub · laptop"
+    },
+    {
+     "type": "entry",
+     "label": "149.154.167.51",
+     "value": "89 kbit/s",
+     "sub": "Telegram · phone"
+    },
+    {
+     "type": "entry",
+     "label": "www.wikipedia.org",
+     "value": "37 kbit/s",
+     "sub": "Wikipedia · tablet"
+    },
+    {
+     "type": "entry",
+     "label": "176.126.162.110",
+     "value": "35 kbit/s",
+     "sub": "Unidentified · Router"
+    },
+    {
+     "type": "entry",
+     "label": "1.1.1.1",
+     "value": "3.0 kbit/s",
+     "sub": "DNS · Router"
+    },
+    {
+     "type": "entry",
+     "label": "17.57.144.20",
+     "value": "1.0 kbit/s",
+     "sub": "Apple Push · phone"
+    }
+   ]
+  },
+  "main": {
+   "title": "Traffic",
+   "items": [
+    {
+     "type": "segments",
+     "options": [
+      {
+       "label": "Live",
+       "checked": true,
+       "action": {
+        "id": "range",
+        "args": [
+         "live"
+        ]
+       }
+      },
+      {
+       "label": "1 hour",
+       "action": {
+        "id": "range",
+        "args": [
+         "1h"
+        ]
+       }
+      },
+      {
+       "label": "24 hours",
+       "action": {
+        "id": "range",
+        "args": [
+         "24h"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "type": "stats",
+     "stats": [
+      {
+       "label": "Download",
+       "value": "6.0",
+       "unit": "Mbit/s",
+       "color": "blue"
+      },
+      {
+       "label": "Upload",
+       "value": "234",
+       "unit": "kbit/s",
+       "color": "green"
+      },
+      {
+       "label": "Peak",
+       "value": "9.2",
+       "unit": "Mbit/s"
+      }
+     ]
+    },
+    {
+     "type": "chart",
+     "label": "Internet",
+     "x_start": "−3 min",
+     "x_end": "now",
+     "unit": "Mbit/s",
+     "span": 90,
+     "series": [
+      {
+       "label": "↓",
+       "color": "blue",
+       "values": [
+        9.202,
+        9.211,
+        9.157,
+        9.041,
+        8.868,
+        8.642,
+        8.368,
+        8.056,
+        7.712,
+        7.347,
+        6.972,
+        6.595,
+        6.229,
+        5.882,
+        5.565,
+        5.286,
+        5.054,
+        4.873,
+        4.751,
+        4.689,
+        4.69,
+        4.753,
+        4.877,
+        5.059,
+        5.293,
+        5.572,
+        5.89,
+        6.238,
+        6.605,
+        6.981,
+        7.357,
+        7.721,
+        8.064,
+        8.375,
+        8.648,
+        8.873,
+        9.045,
+        9.159,
+        9.211,
+        9.201,
+        9.128,
+        8.995,
+        8.805,
+        8.564,
+        8.278,
+        7.955,
+        7.604,
+        7.235,
+        6.858,
+        6.484,
+        6.122,
+        5.783,
+        5.477,
+        5.211,
+        4.994,
+        4.83,
+        4.726,
+        4.682,
+        4.702,
+        4.784,
+        4.926,
+        5.124,
+        5.372,
+        5.664,
+        5.992,
+        6.346,
+        6.717,
+        7.095,
+        7.468,
+        7.827,
+        8.161,
+        8.462,
+        8.721,
+        8.931,
+        9.085,
+        9.181,
+        9.215,
+        9.186,
+        9.094,
+        8.944,
+        8.738,
+        8.482,
+        8.184,
+        7.852,
+        7.495,
+        7.122,
+        6.745,
+        6.373,
+        6.017,
+        5.687
+       ]
+      },
+      {
+       "label": "↑",
+       "color": "green",
+       "values": [
+        0.289,
+        0.289,
+        0.289,
+        0.287,
+        0.284,
+        0.28,
+        0.275,
+        0.27,
+        0.264,
+        0.258,
+        0.252,
+        0.245,
+        0.239,
+        0.233,
+        0.227,
+        0.222,
+        0.218,
+        0.215,
+        0.213,
+        0.212,
+        0.212,
+        0.213,
+        0.215,
+        0.218,
+        0.221,
+        0.226,
+        0.232,
+        0.237,
+        0.244,
+        0.25,
+        0.257,
+        0.263,
+        0.269,
+        0.274,
+        0.279,
+        0.283,
+        0.286,
+        0.288,
+        0.289,
+        0.289,
+        0.288,
+        0.286,
+        0.283,
+        0.279,
+        0.274,
+        0.268,
+        0.262,
+        0.256,
+        0.25,
+        0.243,
+        0.237,
+        0.231,
+        0.226,
+        0.221,
+        0.217,
+        0.214,
+        0.212,
+        0.212,
+        0.212,
+        0.213,
+        0.215,
+        0.219,
+        0.223,
+        0.228,
+        0.233,
+        0.239,
+        0.246,
+        0.252,
+        0.259,
+        0.265,
+        0.271,
+        0.276,
+        0.28,
+        0.284,
+        0.287,
+        0.289,
+        0.289,
+        0.289,
+        0.288,
+        0.285,
+        0.282,
+        0.277,
+        0.272,
+        0.267,
+        0.261,
+        0.254,
+        0.248,
+        0.241,
+        0.235,
+        0.229
+       ]
+      }
+     ]
+    },
+    {
+     "type": "info",
+     "label": "Interface",
+     "value": "rmnet_data0"
+    },
+    {
+     "type": "section",
+     "label": "Mobile data"
+    },
+    {
+     "type": "bar",
+     "label": "This month",
+     "value": "13.8 GB of 50.0 GB",
+     "sub": "today 1.3 GB",
+     "color": "green",
+     "open": "mobile",
+     "fraction": 0.2753728436678648
+    },
+    {
+     "type": "section",
+     "label": "Details"
+    },
+    {
+     "type": "link",
+     "label": "Devices",
+     "value": "3 online",
+     "icon": "devices",
+     "open": "devices"
+    },
+    {
+     "type": "link",
+     "label": "Apps \u0026 services",
+     "value": "YouTube",
+     "icon": "globe",
+     "open": "services"
+    },
+    {
+     "type": "link",
+     "label": "Hosts",
+     "value": "10",
+     "icon": "info",
+     "open": "hosts"
+    },
+    {
+     "type": "link",
+     "label": "Connections",
+     "value": "10",
+     "icon": "chart",
+     "open": "flows"
+    },
+    {
+     "type": "link",
+     "label": "Protocols",
+     "value": "QUIC",
+     "icon": "gear",
+     "open": "protocols"
+    },
+    {
+     "type": "link",
+     "label": "DNS",
+     "value": "0/min",
+     "icon": "check",
+     "open": "dns"
+    },
+    {
+     "type": "link",
+     "label": "Settings",
+     "icon": "gear",
+     "open": "settings"
+    }
+   ]
+  },
+  "mobile": {
+   "title": "Mobile data",
+   "items": [
+    {
+     "type": "stats",
+     "stats": [
+      {
+       "label": "Today",
+       "value": "1.3",
+       "unit": "GB",
+       "color": "blue"
+      },
+      {
+       "label": "This month",
+       "value": "13.8",
+       "unit": "GB"
+      },
+      {
+       "label": "Cap",
+       "value": "50.0",
+       "unit": "GB"
+      }
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "28% used",
+     "value": "36.2 GB left",
+     "color": "green",
+     "fraction": 0.2753728436678648
+    },
+    {
+     "type": "chart",
+     "label": "Per day",
+     "style": "bars",
+     "x_start": "01.11",
+     "x_end": "today",
+     "unit": "GB",
+     "span": 30,
+     "series": [
+      {
+       "color": "blue",
+       "values": [
+        1.06,
+        0.67,
+        0.22,
+        0.12,
+        0.46,
+        0.93,
+        1.1,
+        0.81,
+        0.33,
+        0.1,
+        0.33,
+        0.81,
+        1.09,
+        0.93,
+        0.46,
+        0.12,
+        0.22,
+        0.67,
+        1.05,
+        1.02,
+        1.27
+       ]
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "label": "Period"
+    },
+    {
+     "type": "info",
+     "label": "Dates",
+     "value": "01.11 – 30.11"
+    },
+    {
+     "type": "info",
+     "label": "Starts again in",
+     "value": "10 d."
+    },
+    {
+     "type": "info",
+     "label": "SIM 1, all time",
+     "value": "221.0 GB"
+    },
+    {
+     "type": "link",
+     "label": "Cap and period",
+     "icon": "gear",
+     "open": "settings"
+    },
+    {
+     "type": "text",
+     "label": "Counted by the router's modem, the same counter as in GL.iNet's admin panel.",
+     "color": "dim"
+    }
+   ]
+  },
+  "protocols": {
+   "title": "Protocols",
+   "items": [
+    {
+     "type": "segments",
+     "options": [
+      {
+       "label": "Now",
+       "checked": true,
+       "action": {
+        "id": "basis",
+        "args": [
+         "now"
+        ]
+       }
+      },
+      {
+       "label": "Today",
+       "action": {
+        "id": "basis",
+        "args": [
+         "today"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "type": "bar",
+     "label": "QUIC",
+     "value": "69%",
+     "sub": "4.3 Mbit/s · 1 conn.",
+     "color": "purple",
+     "fraction": 0.6854466915075894
+    },
+    {
+     "type": "bar",
+     "label": "HTTPS",
+     "value": "31%",
+     "sub": "1.9 Mbit/s · 6 conn.",
+     "color": "purple",
+     "fraction": 0.30833350942679133
+    },
+    {
+     "type": "bar",
+     "label": "HTTPS (8443)",
+     "value": "\u003c1%",
+     "sub": "35 kbit/s · 1 conn.",
+     "color": "purple",
+     "fraction": 0.005572269530256821
+    },
+    {
+     "type": "bar",
+     "label": "DNS",
+     "value": "\u003c1%",
+     "sub": "3.0 kbit/s · 1 conn.",
+     "color": "purple",
+     "fraction": 0.0004860638073206169
+    },
+    {
+     "type": "bar",
+     "label": "Apple push",
+     "value": "\u003c1%",
+     "sub": "1.0 kbit/s · 1 conn.",
+     "color": "purple",
+     "fraction": 0.0001614657280419342
+    }
+   ]
+  },
+  "services": {
+   "title": "Apps \u0026 services",
+   "items": [
+    {
+     "type": "segments",
+     "options": [
+      {
+       "label": "Now",
+       "checked": true,
+       "action": {
+        "id": "basis",
+        "args": [
+         "now"
+        ]
+       }
+      },
+      {
+       "label": "Today",
+       "action": {
+        "id": "basis",
+        "args": [
+         "today"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "type": "section",
+     "label": "Categories"
+    },
+    {
+     "type": "bar",
+     "label": "Video",
+     "value": "84%",
+     "sub": "5.2 Mbit/s",
+     "color": "#FF5A5F",
+     "fraction": 1
+    },
+    {
+     "type": "bar",
+     "label": "Social",
+     "value": "9%",
+     "sub": "563 kbit/s",
+     "color": "#4C8DFF",
+     "fraction": 0.10757023516654891
+    },
+    {
+     "type": "bar",
+     "label": "AI",
+     "value": "2%",
+     "sub": "127 kbit/s",
+     "color": "#FFD60A",
+     "fraction": 0.024223811336768004
+    },
+    {
+     "type": "bar",
+     "label": "Work",
+     "value": "2%",
+     "sub": "109 kbit/s",
+     "color": "#64D2FF",
+     "fraction": 0.020900910039827924
+    },
+    {
+     "type": "bar",
+     "label": "Messaging",
+     "value": "1%",
+     "sub": "89 kbit/s",
+     "color": "#34C759",
+     "fraction": 0.01706163238536347
+    },
+    {
+     "type": "bar",
+     "label": "Web \u0026 search",
+     "value": "\u003c1%",
+     "sub": "37 kbit/s",
+     "color": "#5AC8FA",
+     "fraction": 0.007140887171353862
+    },
+    {
+     "type": "section",
+     "label": "Apps \u0026 services"
+    },
+    {
+     "type": "bar",
+     "label": "YouTube",
+     "value": "4.3 Mbit/s",
+     "sub": "Video · devices: 1",
+     "color": "#FF5A5F",
+     "open": "svc:YouTube",
+     "fraction": 1
+    },
+    {
+     "type": "bar",
+     "label": "Netflix",
+     "value": "986 kbit/s",
+     "sub": "Video · devices: 1",
+     "color": "#FF5A5F",
+     "open": "svc:Netflix",
+     "fraction": 0.2319072865946417
+    },
+    {
+     "type": "bar",
+     "label": "Instagram",
+     "value": "563 kbit/s",
+     "sub": "Social · devices: 1",
+     "color": "#4C8DFF",
+     "open": "svc:Instagram",
+     "fraction": 0.13251655652237077
+    },
+    {
+     "type": "bar",
+     "label": "ChatGPT",
+     "value": "127 kbit/s",
+     "sub": "AI · devices: 1",
+     "color": "#FFD60A",
+     "open": "svc:ChatGPT",
+     "fraction": 0.029841489694858392
+    },
+    {
+     "type": "bar",
+     "label": "GitHub",
+     "value": "109 kbit/s",
+     "sub": "Work · devices: 1",
+     "color": "#64D2FF",
+     "open": "svc:GitHub",
+     "fraction": 0.02574798337452312
+    },
+    {
+     "type": "bar",
+     "label": "Telegram",
+     "value": "89 kbit/s",
+     "sub": "Messaging · devices: 1",
+     "color": "#34C759",
+     "open": "svc:Telegram",
+     "fraction": 0.021018349256728377
+    },
+    {
+     "type": "bar",
+     "label": "Wikipedia",
+     "value": "37 kbit/s",
+     "sub": "Web \u0026 search · devices: 1",
+     "color": "#5AC8FA",
+     "open": "svc:Wikipedia",
+     "fraction": 0.008796910939141022
+    },
+    {
+     "type": "bar",
+     "label": "Unidentified",
+     "value": "35 kbit/s",
+     "sub": "Other · devices: 1",
+     "color": "#5C677D",
+     "open": "svc:Unidentified",
+     "fraction": 0.008129398827501851
+    },
+    {
+     "type": "bar",
+     "label": "DNS",
+     "value": "3.0 kbit/s",
+     "sub": "DNS · devices: 1",
+     "color": "#A0A8B8",
+     "open": "svc:DNS",
+     "fraction": 0.0007091197803457997
+    },
+    {
+     "type": "bar",
+     "label": "Apple Push",
+     "value": "1.0 kbit/s",
+     "sub": "System \u0026 updates · devices: 1",
+     "color": "#8C98AD",
+     "open": "svc:Apple Push",
+     "fraction": 0.00023556277977912807
+    }
+   ]
+  },
+  "settings": {
+   "title": "Settings",
+   "items": [
+    {
+     "type": "section",
+     "label": "Monthly mobile data cap"
+    },
+    {
+     "type": "radio",
+     "label": "No cap",
+     "action": {
+      "id": "cap",
+      "args": [
+       "0"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "1 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "1"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "2 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "2"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "5 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "5"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "10 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "10"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "20 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "20"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "30 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "30"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "50 GB",
+     "checked": true,
+     "action": {
+      "id": "cap",
+      "args": [
+       "50"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "100 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "100"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "200 GB",
+     "action": {
+      "id": "cap",
+      "args": [
+       "200"
+      ]
+     }
+    },
+    {
+     "type": "section",
+     "label": "The period starts on day"
+    },
+    {
+     "type": "radio",
+     "label": "1",
+     "checked": true,
+     "action": {
+      "id": "cycle",
+      "args": [
+       "1"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "5",
+     "action": {
+      "id": "cycle",
+      "args": [
+       "5"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "10",
+     "action": {
+      "id": "cycle",
+      "args": [
+       "10"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "15",
+     "action": {
+      "id": "cycle",
+      "args": [
+       "15"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "20",
+     "action": {
+      "id": "cycle",
+      "args": [
+       "20"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "25",
+     "action": {
+      "id": "cycle",
+      "args": [
+       "25"
+      ]
+     }
+    },
+    {
+     "type": "radio",
+     "label": "28",
+     "action": {
+      "id": "cycle",
+      "args": [
+       "28"
+      ]
+     }
+    }
+   ]
+  },
+  "svc:YouTube": {
+   "title": "YouTube",
+   "items": [
+    {
+     "type": "stats",
+     "stats": [
+      {
+       "label": "Now",
+       "value": "4.3",
+       "unit": "Mbit/s",
+       "color": "#FF5A5F"
+      },
+      {
+       "label": "Today",
+       "value": "95",
+       "unit": "MB"
+      },
+      {
+       "label": "Connections",
+       "value": "1"
+      }
+     ]
+    },
+    {
+     "type": "info",
+     "label": "Category",
+     "value": "Video"
+    },
+    {
+     "type": "section",
+     "label": "Devices today"
+    },
+    {
+     "type": "bar",
+     "label": "phone",
+     "value": "95 MB",
+     "color": "#FF5A5F",
+     "open": "dev:aa:bb:cc:00:00:01",
+     "fraction": 1
+    },
+    {
+     "type": "section",
+     "label": "Hosts"
+    },
+    {
+     "type": "entry",
+     "label": "rr1.googlevideo.com",
+     "value": "95 MB"
+    }
+   ]
+  }
+ }
+}

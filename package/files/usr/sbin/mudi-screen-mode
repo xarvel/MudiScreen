@@ -1,0 +1,76 @@
+#!/bin/sh
+# mudi-screen-mode custom|stock|status: which program owns the touchscreen,
+# MudiScreen (custom) or GL.iNet's own gl_screen (stock). The choice survives
+# reboots and firmware updates with Keep Settings.
+
+usage() {
+	echo "usage: mudi-screen-mode custom|stock|status" >&2
+	exit 2
+}
+
+# screen_pids: the processes of the screen itself. The traffic collector
+# and the apps' status runs are the same binary (mudi-screen app ...), so
+# pidof cannot tell them apart.
+screen_pids() {
+	for d in /proc/[0-9]*; do
+		# The name first, without a fork: a process may end meanwhile.
+		read -r st 2>/dev/null <"$d/stat" || continue
+		c=${st#*\(}
+		[ "${c%%)*}" = mudi-screen ] || continue
+		# shellcheck disable=SC2046 # the words of the command line, split on purpose
+		set -- $(tr '\0' ' ' 2>/dev/null <"$d/cmdline")
+		[ "${1##*/}" = mudi-screen ] && [ "$2" != app ] && echo "${d#/proc/}"
+	done
+	return 0
+}
+
+# wait_gone CHECK: wait up to 10 s for CHECK to find no process.
+wait_gone() {
+	i=0
+	while [ -n "$($1)" ] && [ $i -lt 10 ]; do
+		sleep 1
+		i=$((i + 1))
+	done
+}
+
+glscreen_pids() { pidof gl_screen 2>/dev/null; }
+
+case "${1:-status}" in
+custom)
+	/etc/init.d/gl_screen disable
+	if [ -n "$(glscreen_pids)" ]; then
+		/etc/init.d/gl_screen stop >/dev/null 2>&1
+		wait_gone glscreen_pids
+		pids=$(glscreen_pids) && kill -9 $pids 2>/dev/null
+	fi
+	/etc/init.d/mudi-screen enable
+	/etc/init.d/mudi-screen stop >/dev/null 2>&1
+	/etc/init.d/mudi-screen start
+	echo "The touchscreen runs MudiScreen."
+	;;
+stock)
+	/etc/init.d/mudi-screen disable
+	/etc/init.d/mudi-screen stop >/dev/null 2>&1
+	wait_gone screen_pids
+	# A screen that did not end would draw over gl_screen.
+	pids=$(screen_pids) && [ -n "$pids" ] && kill -9 $pids 2>/dev/null
+	/etc/init.d/gl_screen enable
+	/etc/init.d/gl_screen start
+	echo "The touchscreen runs GL.iNet's stock screen."
+	;;
+status)
+	if /etc/init.d/mudi-screen enabled; then
+		echo "mode: custom"
+	else
+		echo "mode: stock"
+	fi
+	state() { if [ -n "$($2)" ]; then echo "$1: running"; else echo "$1: stopped"; fi; }
+	state mudi-screen screen_pids
+	state gl_screen glscreen_pids
+	;;
+pids)
+	# For the package scripts: the screen's processes, one per line.
+	screen_pids
+	;;
+*) usage ;;
+esac

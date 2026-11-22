@@ -1,0 +1,26 @@
+#!/bin/sh
+[ -n "${IPKG_INSTROOT}" ] && exit 0
+# An upgrade keeps the user's settings; the packaged default left beside
+# them only confuses. Settings that the user's file lacks come from it.
+if [ -f /etc/config/mudi-screen-opkg ] && uci -q get mudi-screen.main >/dev/null; then
+	if ! uci -q get mudi-screen.traffic >/dev/null; then
+		uci set mudi-screen.traffic=traffic
+		uci set mudi-screen.traffic.enabled=1
+		uci set mudi-screen.traffic.cap_gb=0
+		uci set mudi-screen.traffic.cycle_day=1
+		uci commit mudi-screen
+	fi
+	rm -f /etc/config/mudi-screen-opkg
+fi
+# The traffic analyzer collects from the start; it costs little.
+/etc/init.d/mudi-screen-traffic enable
+/etc/init.d/mudi-screen-traffic stop >/dev/null 2>&1
+/etc/init.d/mudi-screen-traffic start
+if /etc/init.d/mudi-screen enabled; then
+	# An upgrade, or a reinstall after a firmware update: run the new build.
+	/etc/init.d/mudi-screen stop >/dev/null 2>&1
+	/etc/init.d/mudi-screen start
+else
+	echo "MudiScreen is installed. Switch the touchscreen to it: mudi-screen-mode custom"
+fi
+exit 0

@@ -1,0 +1,59 @@
+#!/bin/sh
+# MudiScreen @VERSION@ installer for the GL.iNet Mudi 7 (GL-E5800).
+#
+# On the router (ssh root@192.168.8.1):
+#   wget -qO- @BASE_URL@/install.sh | sh
+# or with the package already copied to the router:
+#   sh install.sh /tmp/mudi-screen_@VERSION@_aarch64_cortex-a53.ipk
+set -e
+
+VERSION=@VERSION@
+BASE_URL=${MUDI_SCREEN_URL:-@BASE_URL@}
+IPK=mudi-screen_${VERSION}_aarch64_cortex-a53.ipk
+SHA256=@SHA256@
+
+fail() {
+	echo "mudi-screen install: $*" >&2
+	exit 1
+}
+
+[ "$(id -u)" = 0 ] || fail "run this as root on the router"
+grep -q E5800 /proc/device-tree/model 2>/dev/null || fail "this installer is for the GL.iNet Mudi 7 (GL-E5800)"
+
+if [ -n "${1:-}" ]; then
+	file=$1
+	[ -f "$file" ] || fail "no such file: $file"
+else
+	file=/tmp/$IPK
+	trap 'rm -f "$file"' EXIT # a downloaded package never outlives the installer, whatever happens
+	echo "Downloading $IPK ..."
+	wget -q -O "$file" "$BASE_URL/$IPK" || uclient-fetch -q -O "$file" "$BASE_URL/$IPK" ||
+		fail "download failed: $BASE_URL/$IPK"
+fi
+echo "$SHA256  $file" | sha256sum -c - >/dev/null 2>&1 ||
+	fail "checksum mismatch: $file is damaged or belongs to another release"
+
+known=$(opkg list-installed mudi-screen)
+fresh=
+[ -z "$known" ] && [ ! -e /usr/bin/mudi-screen ] && fresh=1
+if [ -z "$known" ] && [ -z "$fresh" ]; then
+	# After a firmware update with Keep Settings the files are there, but
+	# opkg no longer knows the package: let the new files replace them.
+	opkg install --force-overwrite --force-downgrade "$file"
+elif echo "$known" | grep -q "^mudi-screen - $VERSION-"; then
+	opkg install --force-reinstall "$file"
+else
+	# An older release over a newer one is the user's choice: let opkg do it.
+	opkg install --force-downgrade "$file"
+fi
+[ -n "${1:-}" ] || rm -f "$file"
+
+echo
+if [ -n "$fresh" ]; then
+	# A first installation: the touchscreen switches to MudiScreen. An
+	# update keeps the choice that was made (mudi-screen-mode).
+	mudi-screen-mode custom
+	echo "Back to GL.iNet's own screen at any time: mudi-screen-mode stock"
+else
+	mudi-screen-mode status
+fi

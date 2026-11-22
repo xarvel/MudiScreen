@@ -1,0 +1,31 @@
+#!/bin/sh
+[ -n "${IPKG_INSTROOT}" ] && exit 0
+# opkg runs "prerm upgrade VERSION" before an upgrade and "prerm remove" for a
+# removal, and also for "opkg install --force-reinstall", which removes the
+# package and installs it again. Only a real removal gives the display back
+# to GL's own screen; a reinstall just stops the service, and postinst
+# starts the new build.
+
+# opkg_flag FLAG: the opkg that runs this script has FLAG on its command line.
+opkg_flag() {
+	pid=$PPID n=0
+	while [ "$n" -lt 3 ] && [ -r "/proc/$pid/cmdline" ]; do
+		cmd=" $(tr '\0' ' ' <"/proc/$pid/cmdline" 2>/dev/null)"
+		case "$cmd" in *[\ /]opkg" $1 "* | *[\ /]opkg\ *" $1 "*) return 0 ;; esac
+		pid=$(sed -n 's/^PPid:[[:space:]]*//p' "/proc/$pid/status" 2>/dev/null)
+		n=$((n + 1))
+	done
+	return 1
+}
+
+if [ "$1" = remove ] && ! opkg_flag --force-reinstall; then
+	if /etc/init.d/mudi-screen enabled || [ -n "$(/usr/sbin/mudi-screen-mode pids)" ]; then
+		/usr/sbin/mudi-screen-mode stock
+	fi
+	/etc/init.d/mudi-screen-traffic disable
+else
+	/etc/init.d/mudi-screen stop >/dev/null 2>&1
+fi
+# The collector keeps today's numbers on stop.
+/etc/init.d/mudi-screen-traffic stop >/dev/null 2>&1
+exit 0

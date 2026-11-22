@@ -1,0 +1,22 @@
+MudiScreen: an interface for the touchscreen of the GL.iNet Mudi 7
+
+Required Notice: Copyright (c) 2026 Arthur Valiullin (https://github.com/xarvel)
+
+The source code, the package files and the documentation in this repository
+are licensed under the PolyForm Noncommercial License 1.0.0. The terms are in
+the file LICENSE and at https://polyformproject.org/licenses/noncommercial/1.0.0
+
+Any noncommercial use is permitted, and so are changes and redistribution for
+noncommercial purposes, as long as every copy carries the terms (or their URL)
+and the Required Notice line above. Commercial use needs a separate license
+from the copyright holder.
+
+Not covered by the PolyForm license: the third-party code linked into the
+mudi-screen binary (the Go standard library, golang.org/x/image and
+golang.org/x/text). It keeps its own licenses: the list is in
+package/THIRD_PARTY.md and the texts are in package/licenses/ (on the router
+both are under /usr/share/doc/mudi-screen/).
+
+GL.iNet and Mudi are trademarks of their owner. This project is not affiliated
+with or endorsed by GL.iNet. The fonts the screen uses are the router's own
+and are not part of this repository.

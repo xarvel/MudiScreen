@@ -1,0 +1,10 @@
+{
+  "api": 1,
+  "id": "traffic",
+  "name": "Traffic",
+  "order": 40,
+  "command": "/usr/bin/mudi-screen",
+  "args": ["app", "traffic"],
+  "interval": 10,
+  "page_interval": 2
+}

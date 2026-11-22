@@ -1,0 +1,19 @@
+# mudi-screen: a firmware update with Keep Settings (abfota_update -k) keeps
+# exactly the paths listed in /lib/upgrade/keep.d/*, so the screen comes back
+# as the user left it. Apps of other packages keep their files themselves.
+/usr/bin/mudi-screen
+/usr/libexec/mudi-screen/
+/usr/sbin/mudi-screen-mode
+/etc/init.d/mudi-screen
+/etc/rc.d/S81mudi-screen
+/etc/rc.d/K10mudi-screen
+/etc/init.d/mudi-screen-traffic
+/etc/rc.d/S82mudi-screen-traffic
+/etc/rc.d/K10mudi-screen-traffic
+/etc/config/mudi-screen
+/etc/mudi-screen/
+/usr/share/mudi-screen/apps/traffic/
+/usr/share/mudi-screen/i18n/
+/usr/share/doc/mudi-screen/
+# this file itself: it lives in the overlay, which an update wipes
+/lib/upgrade/keep.d/mudi-screen

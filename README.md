@@ -286,6 +286,15 @@ No code was copied, but these saved a lot of guessing:
 - [nazim/mudi7-tor](https://github.com/nazim/mudi7-tor): a Ghidra analysis
   of `gl_screen`: its RPC calls and its ubus `set` method.
 
+## Support
+
+MudiScreen is a personal project. If it is useful to you, you can support its
+development in Bitcoin:
+
+**BTC:** `bc1qcentspekpn7vjfcsdgw05vy33vxu3878tmkr84`
+
+![BTC QR code](docs/support-bitcoin.png)
+
 ## License
 
 [PolyForm Noncommercial 1.0.0](LICENSE): any noncommercial use, change and
